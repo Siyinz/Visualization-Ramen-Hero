@@ -1,5 +1,39 @@
 # Information Visualization Ramen Hero
 Check the interactive visualization on Tableau Public: https://public.tableau.com/profile/siyin.zheng#!/vizhome/Ramen_15859607994280/RamenHero
+
+### Introduction
+The project title is ‘Ramen Hero’ and we are using instant ramen as the basis of our analysis. We want our users to explore the different types of ramen and brands available across the world and learn about the various ramen styles, flavors, ratings, etc. Based on the information that users acquire from exploring our visualizations, we want to allow them to find the ramen that best fit their tastes. 
+
+This is for people who enjoy ramen and want to learn more about ramens. The users will be walked through several visualizations in our storyboard. The exact narrative of the storyline is exploring ramen in the world, continent, region, individual country comparisons. With that information in mind, users will learn more about the brands and then will have to indicate filters that give them ramen recommendations.
+
+### Data and Expected Deliverables
+We started with a dataset from kaggle but ended up using the dataset from the ramen rater website (https://www.theramenrater.com/resources-2/the-list/). Upon cleaning the data and exploring it, we found that the ramen rater dataset may be more suitable for our analysis because it contains more information. Our data contains ramen names, brands, styles, country, star ratings, etc. It is a comprehensive list of ramen rated by a single individual. 
+
+Our domain tasks are:
+- What countries have the highest rated ramen?
+- How do the ramen compare by region?
+- What are some trending flavors in different countries?
+- What are the top rated ramen and their styles (pack, cup, tray, etc.)?
+- What are the recommended ramen?
+
+After seeing/using our visualization, users will learn about the ramen available in different countries and explore insights by the world-level, continent-level, regional-level, and country-comparison level. After exploring ramen based on geographical region, users will learn about the top ten brands of ramen. From the information they acquire, users can adjust filters and explore the ramen that best fits their taste.
+
+### Data Encoding
+The kaggle dataset includes brands across the world with ratings. It also includes value including the flavor, style and variety for the ramen. The new dataset includes up to 3400 rows of data with the same columns of information to the kaggle dataset, which adds more data points . 
+
+For the first graph, we use geographical location to encode each ramen’s country origin with the average country ramen rating listed. Also, we enable users to interact with the map and whenever a user clicks on a certain country, more general information about the ramen from the country will pop up. It helps readers to associate the rating to a certain area of the world.
+
+For the second graph, we use dots to show the number of ramens for each of the ratings in different continents. The smaller dots eventually aggregated into a bigger cluster of dots. The larger the cluster, the more ramen brands originated in the continent. The listing of different columns compares the difference among continents grouped by different ratings.
+
+For the third graph, we dig deeper into the ramen information in Asia, since it is easy to notice from the last graph that the majority of the ramens originated from Asia. We choose several asian countries who are the major ramen origins and compare the ratings grouped by flavors. We used a bar chart to encode the difference since it is the most familiar graph for  the user and it is easy to tell the difference from comparing the length of the graph. 
+
+For the fourth graph, we use a tree map to encode the number of different flavors presented of 5-star rated ramens in both Japan and the US. We use color to show the different flavors with little icons to represent the text of flavor. At the same time, the larger the number of ramen representations, the larger the area of the square. We also add some annotations on the graph to show some insight of comparing flavors of two countries.
+
+For the fifth graph, we use four groups of line charts to present the ratings for top ten rated ramen brands. Y-axis is the rating for each ramen brand, and the X-axis is coded by the number of varieties of the ramen for each brand. In the X-axis, we have four ramen styles, including bowl, cup, pack, and tray. We color coded the top ten ramen brands. In order to make the line chart like noodles, we used an orange color theme. The line size is coded by the number of varieties of the ramen. 
+
+For the last graph, we provided a table with the names of ramen as well as their ratings. We had five filters for the table, where users could select different ranges of rating, countries, flavors, styles, and brands, to decide which ramen could be their favorite.
+
+
 <div class='tableauPlaceholder' id='viz1605448619867' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;Ramen_15859607994280&#47;RamenHero&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Ramen_15859607994280&#47;RamenHero' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;Ramen_15859607994280&#47;RamenHero&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>   
 
 <div class='tableauPlaceholder' id='viz1605448846200' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;P3&#47;P38CR9YQ4&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;P38CR9YQ4' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;P3&#47;P38CR9YQ4&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                
